@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ background: rgb(230,230,230);
+ font-family: Arial,sans-serif;
+ font-size: 13px;
+ font-weight: 500;
+ letter-spacing: -0.5px;
+}
+.demo-form-1{
+  width:500px;
+  background: #ffffff;
+  margin: 20px auto;
+  text-align: center;
+  padding: 35px 20px;
+  box-shadow: 0px 2px 5px grey;
+  border-radius: 2px;
+}
+
+h3{
+  font-weight: 300;
+  line-height: 1.3;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-bottom: 3px solid rgb(92,211,180);
+  display: inline-block;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.formdiv{
+  width:100%;
+  height: 39px;
+  margin-bottom: 20px;
+  color: rgb(180,180,180);
+}
+
+.text-align{
+  text-align: right;
+  float: left;
+  height: 39px;
+}
+
+.left{
+  width: 33.33%;
+}
+
+.right{
+  width: 66.666%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text-align label{
+  line-height: 39px;
+  margin-right: 15px;
+}
+.text-align input{
+  width:100%;
+  padding: 10px;;
+}
+
+.right-align{
+  float: right;
+  padding-left: 0;
+}
+
+.right-content,.left-content{
+  float:left;
+}
+.left-content{
+  padding-left: 10px;
+}
+.right-content{
+  padding-left: 5px;
+}
+.checkbox{
+  line-height: 35px;
+}
+
+.checkbox a{
+  color: rgb(92,211,180);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.checkbox a:hover{
+  font-size: 15px;
+}
+
+input{
+  border: 1px solid rgb(222,222,222);
+  border-radius: 2px;
+}
+.submit-btn{
+  margin-bottom: 0;
+  text-align: left;
+}
+
+input[type=submit]{
+ margin-left: 10px;
+ padding: 8.5px 35px;
+ font-weight: 700;
+ background: rgb(92,211,180);
+ color: #ffffff;
+ font-size: 17px;
+ border-radius: 3px;
+ cursor: pointer;
+ transition: 0.5s;
+}
+
+input[type=submit]:hover{
+  background: rgba(92,211,180,0.7);
+  padding: 9.5px 36px;
+  margin-top: -1px;
+  margin-left: 9px;
+}
+
+input:focus{
+  outline: 0;
+  border: 1px solid rgb(138, 205, 231) !important;
+  background: #d8f8f8;
+}
+
+.login{
+  width:500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p{
+  color: rgb(171, 171, 172);
+  font-size: 14px;
+}
+.underline{
+  text-decoration: underline;
+  color: rgb(92,211,180);
+  transition: 0.3s;
+}
+
+.underline:hover{
+  color:rgb(42, 165, 214);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  
+}
+
+.checkbox-wrapper{
+  position: relative;
+}
+
+input[type=checkbox]{
+  opacity: 0;
+}
+
+.checkmark{
+  border: 1px solid rgb(171,171,171);
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-color: rgb(230, 230, 230);
+  border-radius: 3px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  transition: background-color 0.4s;
+}
+
+#checkbox:checked ~ .checkmark{
+  background-color: lime;
+  border: 1px solid green;
+}
+
+.checkmark::after{
+  content: "";
+  width: 3px;
+  height: 6px;
+  position: relative;
+  display: block;
+  border-right: 2px solid orangered;
+  border-bottom: 2px solid orangered;
+  transform: translate(-50%,-50%) rotate(40deg);
+  transition: 0.6s;
+  top: 45%;
+  left: 50%;
+  opacity: 0;
+}
+
+#checkbox:checked ~ .checkmark::after{
+  opacity: 1;
+}

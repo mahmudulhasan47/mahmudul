@@ -154,6 +154,11 @@ img,.blog{
   text-align:center;
 }
 
+.comment-section .wrapper{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .comment-section h1{
   padding: 40px 0px;
   color: #626262;

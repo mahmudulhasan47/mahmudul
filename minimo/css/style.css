@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Playfair Display', serif;;
+}
+
+.header,.section{
+  width: 100%;
+}
+
+.header{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.container{
+  width: 1140px;
+  margin: 0px auto;
+}
+
+.header .container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row{
+  margin-left: -15px;
+  margin-right: -15px;
+  display:flow-root;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo{
+  width: 20%;
+  float: left;
+  padding: 7px;
+  padding-left: 0;
+}
+
+.main-menu{
+  width:80%;
+  float: right;
+}
+
+.main-menu ul{
+  list-style: none;
+  float: right;
+}
+
+.main-menu ul li{
+  display: inline-block;
+  padding: 10px 5px;
+  margin-left: 5px;
+}
+
+.main-menu ul li:last-child{
+  padding-right: none !important;
+}
+
+.main-menu a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #828282;
+  transition: 0.5s;
+}
+
+.main-menu a:hover{
+  color: #353434;
+  display: inline-block;
+  transform: scale(1.1);
+}
+
+.wrapper{
+  overflow: hidden;
+}
+
+.banner-section .blog,.top,.bottom{
+  padding: 50px;
+  width: 100%;
+}
+
+.banner-section img{
+  width:100%;
+}
+
+.category{
+  color: #b4ad9e;
+  padding-top: 10px;
+  padding-bottom: 15px
+}
+
+.title{
+  color: #626262;
+  padding-bottom: 15px;
+}
+
+.description{
+  color: #626262;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.comment a{
+  color: #b4ad9e;
+  text-transform:uppercase;
+  text-decoration: none;
+
+}
+
+.top, .bottom{
+  width: 100%;
+  display: flow-root;
+}
+
+.top .item,.bottom .item{
+  width: 50%;
+  float:left;
+}
+
+.top .second-item img, .top .second-item .blog,.bottom .second-item img, .bottom .second-item .blog{
+  float: right;
+}
+
+img,.blog{
+  width: 95%;
+}
+
+.top{
+  padding-bottom: 25px;
+}
+
+.bottom{
+  padding-top: 25px;
+}
+
+.blog{
+  padding-top: 20px;
+}
+
+.top .description,.bottom .description{
+  text-align: justify;
+}
+
+
+.comment-section{
+  background: #f0f0f0;
+  text-align:center;
+}
+
+.comment-section h1{
+  padding: 30px 0px;
+  color: #626262;
+}
+
+.comment-section .email{
+  width: 100%;
+  padding-bottom: 45px;
+  margin-top: 0 !important;
+}
+
+.email{
+  position: relative;
+  width: 382.52px;
+  text-align: center;
+}
+input[type=email]{
+  width: 382.52px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 377px;
+}
+
+input:focus{
+  outline: 0 !important;
+  background: #ffffff;
+}
+
+input[type=submit]{
+  display: none;
+}
+form img{
+  width: 30px;
+  height: 30px;
+  transform: rotate(130deg);
+  position: relative;
+  top:4px;
+  left: 170px;
+  cursor: pointer;
+}
+
+.comment-section{
+  margin-bottom: 50px;
+}
+
+button.load-more {
+  padding: 10px 30px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid   #b4ad9e;
+  border-right: 1px solid  #b4ad9e;
+  background: transparent;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+button.load-more:hover{
+  background: #f0f0f0;
+}
+.load-more-section .bottom .load-more{
+  width: 140px;
+  margin: 0 auto;
+ }
+
+
+footer{
+  width: 100%;
+  background:  #f0f0f0;
+  display: flow-root;
+  line-height: 1.4;
+}
+
+footer .container{
+  display: flow-root;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer .left{
+  float: left;
+  padding-left: 50px;
+}
+
+footer p a{
+  text-decoration: none;
+  color: #626262;
+  transition: 0.5s;
+}
+
+footer p a:hover{
+  text-decoration: underline;
+  color: #0e0e0e;
+}
+
+footer .right{
+  float: right;
+}
+
+
+footer .follow{
+  float: left;
+  padding-right: 5px;
+}
+
+
+footer ul{
+  list-style: none;
+  float: right;
+}
+
+footer ul li{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer ul i{
+  color: #626262;
+  font-size: 20px;
+}
+
+.facebook a:hover i{
+  color: rgb(4, 113, 255);
+}
+.twitter a:hover i{
+  color:orangered;
+}
+.instagram a:hover i{
+  color: lime;
+}

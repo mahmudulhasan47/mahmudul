@@ -155,8 +155,8 @@ img,.blog{
 }
 
 .comment-section .wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
 }
 
 .comment-section h1{

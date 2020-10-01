@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Rajdhani';
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.header-area{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.sticky{
+  position: fixed;
+  animation: sticky-header 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sticky-header{
+  0%{
+    background: transparent;
+    top: -96px;
+    opacity: 0;
+  }
+  50%{
+    top: 0px;
+    
+    
+  }
+  75%{
+    top:-10px;
+  }
+  100%{
+    top:0px;
+    background: #412fb3;
+    opacity: 1;
+  }
+}
+
+
+nav.navbar.navbar-expand-lg.navbar-light {
+  padding: 20px 0px;
+}
+
+.dropdown-toggle::after{
+  display: none;
+}
+
+.dropdown-menu{
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.dropdown-menu li{
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.dropdown-menu li a{
+  color: #3a414e;
+  transition: 0.5s;
+}
+
+.header-area ul .nav-item{
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.header-area .nav-link{
+  font-family: 'Roboto', sans-serif;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+
+.header-area .sign-up{
+  margin-left: 40px;
+}
+
+.sign-up-btn,.get-started-btn,.know-more-btn,.buy-now-btn{
+  background: #fff;
+  padding: 14px 40px;
+  border: 1px solid #22195b;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.sign-up-btn:hover,.get-started-btn:hover,.know-more-btn:hover,.buy-now-btn:hover,.card:hover .buy-now-btn{
+  background:#22195b;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.get-started-btn a,.know-more-btn a{
+  color: inherit;
+}
+.get-started-btn a:hover,.know-more-btn a:hover{
+  text-decoration: none;
+  color: white;
+}
+/* banner section css */
+.banner-section{
+  padding: 265px 0px 275px;
+  margin-bottom: 110px;
+  position: relative;
+  background: #22195b;
+  background-size: cover;
+  z-index: 1;
+}
+
+.banner-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: url(../images/banner/banner-bg.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero-banner{
+  position: relative;
+}
+.hero-banner img{
+  position: absolute;
+  top: 0;
+  left: -110px;
+}
+
+.text-content{
+  margin-top: 50px;
+}
+
+.text-content h1 {
+  font-size: 50px;
+  color: #ffff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.text-content .clearfix{
+  padding-bottom: 30px;
+}
+
+.text-content p {
+  font-family: 'roboto',sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* feature content css here */
+.feature-section{
+  margin-bottom: 120px;
+}
+.feature-article{
+  margin-bottom: 50px;
+}
+.feature-article h1{
+  color: #3a414e;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-article p{
+  padding: 0px 30px;
+  color: #797979;
+  font-size: 15px;
+}
+
+.feature-box{
+  padding: 30px;
+  background: #faf9ff;
+  transition: 0.5s;
+}
+
+.feature-box:hover{
+  background: #fff;
+  box-shadow: 1px 8px 10px rgb(181, 181, 181);
+}
+
+.feature-box .icon{
+  margin-bottom: 15px;
+}
+
+.feature-box .icon i{
+  font-size: 30px;
+  color: #21146a;
+}
+
+.feature-box h4{
+  font-size: 22px;
+  font-weight: 600;
+  color:  #3a414e
+}
+
+.feature-box p{
+  font-size: 15px;
+  font-family: 'roboto',sans-serif;
+  margin-bottom: 0;
+  color: #797979;
+}
+
+
+/* Revolation Section CSS */
+section.revolation-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background: #faf9ff !important;
+  margin-bottom: 120px;
+}
+
+.revolation-desc h1{
+  font-size: 36px;
+  font-weight: 700;
+  color: #3a414e;
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+
+.revolation-desc p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #797979;
+  line-height: 1.69;
+  margin-bottom: 40px;
+}
+
+.offer-section{
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.offer-img{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.offer-img img{
+  position: absolute;
+  top: 0;
+  left: 110px;
+}
+
+.offer-mt{
+  margin-top: -40px;
+}
+
+.offer-mr{
+  margin-bottom: 50px;
+}
+
+/* solution section CSS */
+.solution-section{
+  background: #faf9ff;
+  padding-top: 120px;
+  padding-bottom: 140px;
+  margin-bottom: 100px;
+}
+.solution-section .revolation-desc{
+  padding: 0px 40px 0px 22px;
+  margin-bottom: 36px;
+}
+
+.solution-section .solution-img{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.solution-img img{
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+/* Choose Plane Section CSS */
+.choose-plan-section{
+  margin-bottom: 100px;
+}
+.choose-plan-section .choose-plan{
+  margin-bottom: 10px;
+}
+.choose-plan-section .col-md-4{
+  padding-bottom: 30px
+}
+.card{
+  background: #faf9ff;
+  border: none;
+  transition: 0.5s;
+}
+
+.card:hover{
+  box-shadow: 1px 8px 15px rgba(0,0,0,0.5);
+  background: #fff;
+}
+.card-header{
+  background: transparent;
+}
+
+.card-header h4{
+  font-weight: 700;
+  font-size: 27px;
+  margin-top: 26px;
+  margin-bottom: 5px;
+  color: #3a414e;
+}
+
+.card-header p{
+  font-size: 15px;
+  color: #797979;
+  margin-bottom: 25px;
+}
+.card-header h1{
+  font-family: 'roboto';
+  font-size: 60px;
+  font-weight: 700;
+  color: #3a414e;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+.card-text-container{
+  padding: 10px 0px;
+}
+.card-body p{
+  font-size: 15px;
+  color: #797979;
+  margin-bottom: 12px;
+}
+
+.card-body span{
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.card-body .ti-check{
+  color: green;
+}
+
+.card-body .ti-close{
+  color: red;
+}
+.card-footer{
+  padding: 35px 0px;
+  background: transparent;
+}
+
+/* client review section CSS */
+.client-review-section{
+  background: #faf9ff;
+  margin-bottom: 90px;
+  padding-bottom: 120px;
+}
+
+.client-review-section .feature-article{
+  margin-bottom: 20px;
+}
+
+.review-section{
+  padding-top: 130px;
+}
+
+.testimonial-img{
+  width: 120px;
+  height: 120px;
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+}
+
+.testimonial-text{
+  padding: 0px 130px;
+}
+
+.testimonial-text-wrapper{
+  background: #fff;
+  padding: 50px 20px 30px;
+  margin-bottom: 30px;
+}
+
+.owl-theme .owl-nav {
+  display: none;
+}
+
+.owl-dot{
+  outline: 0 !important;
+  width: 40px !important;
+}
+.owl-theme .owl-dots .owl-dot span{
+  width: 20px !important;
+  height: 5px !important;
+  border-radius: 0 !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #21146a !important;
+}
+
+
+/* client logo area CSS */
+.client-logo-area{
+  padding: 30px 0px;
+  margin-bottom: 90px;
+}
+.owl-carousel .owl-item img{
+  width: inherit;
+}
+
+.client-logo-area .client-logo-img img{
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(1);
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.client-logo-area .client-logo-img img:hover{
+  filter: none;
+  opacity: 1;
+}
+
+/* Footer Section CSS */
+
+.footer-section{
+  padding-top: 120px;
+  padding-bottom: 100px;
+  width: 100%;
+  background: #0e1424;
+}
+
+.footer-section h4{
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.footer-section ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li{
+  font-family: 'roboto',sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a,.footer-section ul li p{
+  color: #797979;
+}
+
+.footer-section ul li a:hover{
+  text-decoration: none;
+}
+
+.email-input input[type=email]{
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border: none;
+  height: 48px;
+  width: 70% !important;
+  padding: 10px 20px 10px 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.email-input input[type=email]:focus{
+  outline: none;
+}
+.email-input input[type=email]:focus::placeholder{
+  color: transparent;
+}
+
+.email-input input[type=email]::placeholder{
+  color: #8f8f8f;
+}
+
+.email-input input[type=submit]{
+  font-size: 14px;
+  font-weight: 600;
+  color: #797979;
+  border-radius: 0;
+  padding: 10px 15px;
+  position: relative;
+  left: -50px;
+  top: 1px;
+  border: none;
+}
+
+.email-input input[type=submit]:hover{
+  background: #f0eeee;
+  color: #3a414e;
+}
+
+.footer-part-1{
+  margin-bottom: 60px;
+}
+
+.footer-part-2 ul{
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+  display: block;
+}
+
+.footer-part-2 ul li{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  text-align: center;
+  line-height: 32px;
+  transition: 0.5s;
+}
+.footer-part-2 ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-part-2 ul li:hover{
+  background: #fff;
+}
+.footer-part-2 ul li:hover a{
+  color: #0e1424;
+}
+
+.footer-part-2 p{
+  color: #797979;
+  font-size: 15px;
+  font-family: 'roboto',sans-serif;
+  font-weight: 400;
+}
+
+.footer-part-2 p i{
+  color: red;
+  margin: 0px 5px;
+}
+
+.footer-part-2 p a{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+@media(min-width: 992px){
+  .dropdown .dropdown-menu{
+    top: 60px;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+  }
+
+  .dropdown-menu{
+    width: 200px;
+  }
+
+  .dropdown .dropdown-toggle:hover~ .dropdown-menu{
+    top:100%;
+  }
+
+  .show .dropdown-menu{
+    top: 100%;
+    visibility: visible ;
+    opacity: 1;
+  }
+
+  .dropdown .dropdown-menu li:hover{
+    background: #3a414e;
+  }
+
+  .dropdown .dropdown-menu li:hover a{
+    color: white;
+    text-decoration: none;
+  }
+}
